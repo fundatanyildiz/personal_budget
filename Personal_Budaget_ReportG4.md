@@ -35,7 +35,12 @@ User can enter income and expense detail on user interface. This information wil
     """ initialize db"""
       conn = create_connection(filename)
       if conn is not None:
-          create_table(conn, sql_create_budget_table)
+          create_table(conn, sql_create_budget_table) 
+          ** 
+          create_table(conn, sql_create_table2)
+          create_table(conn, sql_create_table3)
+          …… 
+          **
       else:
           print("Error! cannot create the database connection.")
 ```
