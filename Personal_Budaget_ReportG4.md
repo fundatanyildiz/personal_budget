@@ -1,6 +1,6 @@
 # Personal Budgeting
 
-The goal of this project is to create a personal budgeting app that allows users to track their income and expenses, set budget goals, and view their spending habits.
+The goal of this project is to create a personal budgeting app that allows users to track their income and expenses, and view their spending habits.
 
 ## Description
 
@@ -24,18 +24,20 @@ User can enter income and expense detail on user interface. This information wil
 
 ### Executing program
 
-* First I created a database to store user’s budget data. model.py file includes sql queries in order to create a table, insert data to table and query user’s entries. create_connection function helps to connect sqlite database and create_table
-function uses sql_create_budget_table query in order to initialise database. For this project we created just one table which is budget table. But If we need to create more table we can add sql queries for these tables, and it is too easy adding 
-new tables.
+* First I created a database to store user’s budget data. model.py file includes sql queries in order to create a table,
+  insert data to table and query user’s entries. "create_connection" function helps to connect sqlite database and 
+  "create_table" function uses sql_create_budget_table query in order to initialize database. For this project we created
+  just one table which is budget table. But If we need to create more table we can add sql queries for these tables, 
+  and it is too easy adding new tables.
 
 ```
-def initialize_db():
-    """ initialize db, if once table created it will not run"""
-    conn = create_connection(filename)
-    if conn is not None:
-        create_table(conn, sql_create_budget_table)
-    else:
-        print("Error! cannot create the database connection.")
+  def initialize_db():
+    """ initialize db"""
+      conn = create_connection(filename)
+      if conn is not None:
+          create_table(conn, sql_create_budget_table)
+      else:
+          print("Error! cannot create the database connection.")
 ```
 
 ## Help
