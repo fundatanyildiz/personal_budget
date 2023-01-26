@@ -6,9 +6,7 @@ The goal of this project is to create a personal budgeting app that allows users
 
 User can enter income and expense detail on user interface. This information will be stored on database. This project also allows user to view previous entries and to visualize the user's budget data. 
 
-![Screenshot 2023-01-22 at 16.23.25.png](..%2F..%2F..%2FLibrary%2FGroup%20Containers%2Fgroup.com.apple.notes%2FAccounts%2FA13590EA-2317-4A20-8AAD-8406D73EEEDF%2FMedia%2FCF3832D3-E43E-4B07-8227-F33F8C957496%2FScreenshot%202023-01-22%20at%2016.23.25.png)
-
-![Screenshot 2023-01-22 at 16.25.55.png](..%2F..%2F..%2FLibrary%2FGroup%20Containers%2Fgroup.com.apple.notes%2FAccounts%2FA13590EA-2317-4A20-8AAD-8406D73EEEDF%2FMedia%2F7FAC0F42-2B86-45C9-8702-9E8DE644A0C5%2FScreenshot%202023-01-22%20at%2016.25.55.png)
+![images](gui.png)
 
 ## Getting Started
 
