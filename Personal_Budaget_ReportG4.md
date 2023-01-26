@@ -6,7 +6,9 @@ The goal of this project is to create a personal budgeting app that allows users
 
 User can enter income and expense detail on user interface. This information will be stored on database. This project also allows user to view previous entries and to visualize the user's budget data. 
 
-![images](gui.png)
+![gui](images/gui.png)
+
+![pie charts](images/charts.png)
 
 ## Getting Started
 
@@ -22,10 +24,18 @@ User can enter income and expense detail on user interface. This information wil
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* First I created a database to store user’s budget data. model.py file includes sql queries in order to create a table, insert data to table and query user’s entries. create_connection function helps to connect sqlite database and create_table
+function uses sql_create_budget_table query in order to initialise database. For this project we created just one table which is budget table. But If we need to create more table we can add sql queries for these tables, and it is too easy adding 
+new tables.
+
 ```
-code blocks for commands
+def initialize_db():
+    """ initialize db, if once table created it will not run"""
+    conn = create_connection(filename)
+    if conn is not None:
+        create_table(conn, sql_create_budget_table)
+    else:
+        print("Error! cannot create the database connection.")
 ```
 
 ## Help
